@@ -67,7 +67,7 @@ $("button").on("click", function () {
 $("#currentDay").text(formatCalendar + " -- " + fomratTime);
 
 
-//
+// adding  ids to cycle through got the idea from stack overflow
 var timeId = ["#9", "#10", "#11", "#12", "#1", "#2", "#3", "#4", "#5"];
 
 if (moment().hour() === 9) {

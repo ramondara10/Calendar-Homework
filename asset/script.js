@@ -3,7 +3,7 @@ var formatCalendar = moment().format("dddd MMMM Do YYYY");
 var fomratTime = moment().format("h:mm");
 
 //content area
-var hours = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM"]
+var hours = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"]
 for (var i = 0; i < hours.length; i++) {
   var divId = ["9", "10", "11", "12", "1", "2", "3", "4", "5"];
   var textId = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
@@ -64,7 +64,7 @@ $("button").on("click", function () {
   console.log("stored text: ", storedText)
 });
 
-$("#currentDay").text(formatCalendar + " -- " + fomratTime);
+$("#today").text(formatCalendar + " -- " + fomratTime);
 
 
 // adding  ids to cycle through got the idea from stack overflow
